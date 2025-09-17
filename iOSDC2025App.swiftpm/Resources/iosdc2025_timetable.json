@@ -1,0 +1,2312 @@
+{
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Track A",
+      "hashtag": "#iosdc #a"
+    },
+    {
+      "id": 2,
+      "name": "Track B",
+      "hashtag": "#iosdc #b"
+    },
+    {
+      "id": 3,
+      "name": "Track C",
+      "hashtag": "#iosdc #c"
+    },
+    {
+      "id": 4,
+      "name": "Track D",
+      "hashtag": "#iosdc #d"
+    }
+  ],
+  "days": [
+    {
+      "id": 1,
+      "title": "Day 1",
+      "date": "2025-09-19T15:30:00+09:00",
+      "sessions": [
+        {
+          "id": 1,
+          "time": "2025-09-19T15:30:00+09:00",
+          "title": "開場",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 2,
+          "time": "2025-09-19T16:00:00+09:00",
+          "title": "プレオープニング",
+          "track_id": 1,
+          "duration": 15,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/9a0b4fa2-3f1a-4531-917b-8be668f15d09"
+        },
+        {
+          "id": 3,
+          "time": "2025-09-19T16:20:00+09:00",
+          "title": "iOSDJ2025 for the 10th anniversary",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 12,
+            "name": "Hiromu Tsuruta",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/6e190fab-e985-447f-9065-95f52a24a0ed.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0100babc-440d-4425-80b3-6c8ab8dfb1bc"
+        },
+        {
+          "id": 4,
+          "time": "2025-09-19T16:40:00+09:00",
+          "title": "Swiftコードバトル 準々決勝 マッチ1 （30分）",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 5,
+          "time": "2025-09-19T16:45:00+09:00",
+          "title": "半自動E2Eで手っ取り早くリグレッションテストを効率化しよう",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 3,
+            "name": "Ryuta Kibe",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/f3279fe7-870c-4e5c-917c-a5394babddae.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/54f37345-164e-4ac7-93c9-198aa285fb31"
+        },
+        {
+          "id": 6,
+          "time": "2025-09-19T17:05:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 7,
+          "time": "2025-09-19T17:20:00+09:00",
+          "title": "手話ジェスチャーの検知と翻訳~ハンドトラッキングの可能性と限界~",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 1,
+            "name": "Sugiy",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/dae03b75-3314-4a04-80f2-3540c21f147a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0d54dde4-adf8-48a2-b1ba-800d6d67c59b"
+        },
+        {
+          "id": 8,
+          "time": "2025-09-19T17:20:00+09:00",
+          "title": "Swiftコードバトル 準々決勝 マッチ2 （30分）",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 9,
+          "time": "2025-09-19T17:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 10,
+          "time": "2025-09-19T17:55:00+09:00",
+          "title": "Swiftで作って学ぶGitの仕組み",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 2,
+            "name": "Kazu42",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/b94eff8a-791d-4078-9a27-e93f30970af0.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/bc52998d-569c-4bb3-9e28-8b918297b93e"
+        },
+        {
+          "id": 11,
+          "time": "2025-09-19T17:55:00+09:00",
+          "title": "【スマホの熱中症対策】 ThermalState API 実践活用ガイド",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 8,
+            "name": "tsuboyan",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2e4dd3ab-c47f-4872-b2b9-14cab1ef52e1.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/5fc58d9f-fdf6-48ac-bdd1-bfce406ad099"
+        },
+        {
+          "id": 12,
+          "time": "2025-09-19T17:55:00+09:00",
+          "title": "AIを活用したレシート読み取り機能の開発から得られた実践知",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 11,
+            "name": "岩名勇輝",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2a077657-4f29-477c-9dc2-f63f42f550dd.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/40681d36-4abd-4e54-84c4-448fdea48009"
+        },
+        {
+          "id": 13,
+          "time": "2025-09-19T18:00:00+09:00",
+          "title": "Swiftコードバトル 準決勝 マッチ1 （30分）",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 14,
+          "time": "2025-09-19T18:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 15,
+          "time": "2025-09-19T18:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 16,
+          "time": "2025-09-19T18:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 17,
+          "time": "2025-09-19T18:30:00+09:00",
+          "title": "金融サービスの成長を支える \"本人確認フロー\" の改善と取り巻く環境の変化",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 4,
+            "name": "nakamuuu",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d7d07f01-928b-4931-b1aa-625fa3d25535.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/da4e7e53-112f-4ee0-bd7b-2b73e8548458"
+        },
+        {
+          "id": 18,
+          "time": "2025-09-19T18:30:00+09:00",
+          "title": "Embedded Swiftで解き明かすコンピューターの仕組み",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 6,
+            "name": "大庭 慎一郎",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/43c6c6bf-fb90-4737-954c-745d3a80b60d.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/ddd3be00-7378-47f6-845c-b546b33f84e4"
+        },
+        {
+          "id": 19,
+          "time": "2025-09-19T18:30:00+09:00",
+          "title": "AccessorySetupKitで実現するシームレスなペアリング体験",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 7,
+            "name": "nekowen",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a52aa7cb-07fc-478b-b634-78370201aecd.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/32da7be3-c77e-409c-b30d-f7322e5cd88e"
+        },
+        {
+          "id": 20,
+          "time": "2025-09-19T18:40:00+09:00",
+          "title": "Swiftコードバトル 準決勝 マッチ2 （30分）",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 21,
+          "time": "2025-09-19T18:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 22,
+          "time": "2025-09-19T18:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 23,
+          "time": "2025-09-19T18:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 24,
+          "time": "2025-09-19T19:05:00+09:00",
+          "title": "アセンブリで学ぶCPUアーキテクチャ",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 5,
+            "name": "akkey",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/41c4cd2f-4bf1-4e86-acbd-5cb54c9bf67b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/4316d7ee-b3a0-4623-997a-df8843a9a709"
+        },
+        {
+          "id": 25,
+          "time": "2025-09-19T19:05:00+09:00",
+          "title": "AlarmKitで実現する新時代のシステム通知",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 9,
+            "name": "續橋　涼",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/9a7bb788-fe18-4fdd-931a-635ce725ec3a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/439dad47-8495-4f7e-8ee0-e244bb1e7667"
+        },
+        {
+          "id": 26,
+          "time": "2025-09-19T19:05:00+09:00",
+          "title": "空間再現力の鍵、APMPを読み解く",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 10,
+            "name": "なめき ちはる",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/291b3266-a4e9-4199-8bc9-b13d32df6abb.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/2f0734ed-1b91-4e0a-9dfb-70decb8b5ddd"
+        },
+        {
+          "id": 27,
+          "time": "2025-09-19T19:20:00+09:00",
+          "title": "Swiftコードバトル 決勝 （30分）",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 28,
+          "time": "2025-09-19T19:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 29,
+          "time": "2025-09-19T19:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 30,
+          "time": "2025-09-19T19:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 31,
+          "time": "2025-09-19T20:00:00+09:00",
+          "title": "Today's Update",
+          "track_id": 1,
+          "duration": 15,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/42a06885-6cb7-4f7a-9f68-d697a2a2dc18"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Day 2",
+      "date": "2025-09-20T09:30:00+09:00",
+      "sessions": [
+        {
+          "id": 32,
+          "time": "2025-09-20T09:30:00+09:00",
+          "title": "開場 （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 33,
+          "time": "2025-09-20T10:00:00+09:00",
+          "title": "オープニング",
+          "track_id": 1,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/7ecc868b-ea69-48f3-bbb8-8b10728e8458"
+        },
+        {
+          "id": 34,
+          "time": "2025-09-20T10:50:00+09:00",
+          "title": "スマホで海難事故は防げるか？年間2000件以上の小型船舶の事故に挑むアプリ開発",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 23,
+            "name": "瀬尾 敦生",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/4ca5d280-5a8e-4567-b713-c63600896800.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/9be7446d-1bcc-4e09-92e3-73ecbbefb592"
+        },
+        {
+          "id": 35,
+          "time": "2025-09-20T10:50:00+09:00",
+          "title": "あなたの知らない「動画広告」の世界 〜実装して理解する動画広告のしくみ〜",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 24,
+            "name": "ukitaka",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/b7a26598-438d-4d36-88f7-3b6f653a7f90.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/68521ad7-3175-4acc-b08d-9569ce717086"
+        },
+        {
+          "id": 36,
+          "time": "2025-09-20T10:50:00+09:00",
+          "title": "航空券、マイナカード、クレカ 以外の可能性を できること ベースで考えよう！ 進化する Walletアプリ をあなたの選択肢に！",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 25,
+            "name": "ちゃんくろ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/5d3a58a8-6a3c-48e3-a4ae-c79df414e627.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/65da6cc1-f1b2-4d71-8903-4eed4d8ad1df"
+        },
+        {
+          "id": 37,
+          "time": "2025-09-20T10:50:00+09:00",
+          "title": "ハイパフォーマンスなGIFアニメ再生を実現する工夫",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 28,
+            "name": "noppe",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a0196c7b-4302-443a-9308-d115f3e4208c.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/ab24be40-5e30-40c2-8eff-a2e691f10865"
+        },
+        {
+          "id": 38,
+          "time": "2025-09-20T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 39,
+          "time": "2025-09-20T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 40,
+          "time": "2025-09-20T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 41,
+          "time": "2025-09-20T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 42,
+          "time": "2025-09-20T11:25:00+09:00",
+          "title": "「Chatwork」アプリにおけるSVVS実装戦略",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 17,
+            "name": "terry",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/5da81c9d-c808-4a5a-8dd3-6bbf909f183d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/8851fa48-bb03-42e4-9542-3204807fc1a0"
+        },
+        {
+          "id": 43,
+          "time": "2025-09-20T11:25:00+09:00",
+          "title": "iOSエンジニアキャリア設計入門 〜”先進性”をキャリアの武器へ〜",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 19,
+            "name": "大倉 潤也",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/ff4712f9-0adb-42d1-8dce-63609da10bef.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/3c6dcbe3-ef2d-428f-a49c-98929180e3ad"
+        },
+        {
+          "id": 44,
+          "time": "2025-09-20T11:25:00+09:00",
+          "title": "ユーザー数10万人規模のアプリで挑んだトップ画面のUI刷新",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 21,
+            "name": "小林 俊哉 (とち)",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/07eb60c4-9787-4f2f-893d-f2efd45e6573.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/097a38e9-d827-4c15-8094-7c8fe37f03f6"
+        },
+        {
+          "id": 45,
+          "time": "2025-09-20T11:25:00+09:00",
+          "title": "ウォンテッドリーのAI活用：開発現場での取り組み",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 22,
+            "name": "長尾 光",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/8e32b850-119f-4b62-8b7b-125a05000573.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/5053d91d-2767-4eaf-859d-f144ead13714"
+        },
+        {
+          "id": 46,
+          "time": "2025-09-20T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 47,
+          "time": "2025-09-20T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 48,
+          "time": "2025-09-20T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 49,
+          "time": "2025-09-20T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 50,
+          "time": "2025-09-20T13:00:00+09:00",
+          "title": "作って学ぶWebP入門",
+          "track_id": 1,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 43,
+            "name": "岸川克己",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2d99b0c0-145e-45ca-bce8-c1df20c357fb.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/40bb8fcc-0df5-453e-b6b7-18730b420b0c"
+        },
+        {
+          "id": 51,
+          "time": "2025-09-20T13:00:00+09:00",
+          "title": "レシート印刷が途中で止まる？Stream APIとBluetooth接続のルールを守って楽しくレシートプリンターで印刷しよう！",
+          "track_id": 3,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 44,
+            "name": "satoryo",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/c83c9030-1fc2-44ff-bf39-3bacb7ca9b4f.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/95648833-0e4f-4dfd-ba87-60b739a7dabe"
+        },
+        {
+          "id": 52,
+          "time": "2025-09-20T13:00:00+09:00",
+          "title": "iOSアプリのバックグラウンド制限を突破してバックグラウンド遷移後もアップロード処理を継続するまでの道のり",
+          "track_id": 4,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 45,
+            "name": "Hikaru Sato",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d4ef2e3a-823f-46f6-9f51-0ffec5f575f9.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/30a8ef80-5065-49e9-983a-3c26784f51f2"
+        },
+        {
+          "id": 53,
+          "time": "2025-09-20T13:00:00+09:00",
+          "title": "そろそろ FormatStyle",
+          "track_id": 2,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 46,
+            "name": "treastrain / Tanaka Ryoga",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/35c25cae-022e-49d7-ba9b-7a87aa015081.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0ddc6419-b3e5-4c88-889e-0ddfabc24be3"
+        },
+        {
+          "id": 54,
+          "time": "2025-09-20T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 55,
+          "time": "2025-09-20T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 56,
+          "time": "2025-09-20T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 57,
+          "time": "2025-09-20T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 58,
+          "time": "2025-09-20T13:55:00+09:00",
+          "title": "ノーコードアプリプラットフォームを支えるServer-Driven UI 〜Block UIアーキテクチャの設計と実装〜",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 15,
+            "name": "Eiji Shirakazu",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2cf5ac45-ddbe-44f1-a352-79583c4c73c6.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0f376865-51fb-4ccd-86ae-f6a690a24c71"
+        },
+        {
+          "id": 59,
+          "time": "2025-09-20T13:55:00+09:00",
+          "title": "iOSエンジニアの可能性を広げる：ソニーがKotlin/Compose Multiplatformに挑戦した理由（あなたもぜひ）",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 16,
+            "name": "Sergio Carrilho",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/dea7bb15-c97e-4bf6-80f2-683c57602fab.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/1a627875-4bbb-4f95-9691-9ed3e80349cb"
+        },
+        {
+          "id": 60,
+          "time": "2025-09-20T13:55:00+09:00",
+          "title": "テストコードすら書けなかったレガシーアプリがAIと上手に協働できるようになるまでの軌跡",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 18,
+            "name": "吉田誠",
+            "image_url": null
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/dfea09ab-3ebf-4327-8c9f-c52f90db08ae"
+        },
+        {
+          "id": 61,
+          "time": "2025-09-20T13:55:00+09:00",
+          "title": "ABEMAモバイルアプリがKotlin Multiplatformと歩んだ5年: 導入と運用、成功と課題",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 20,
+            "name": "安井 瑛男",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/e107a05b-04f8-4dbb-9b0d-3cbe9de4b76c.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/29033387-def5-41c7-afc0-86bb54557c99"
+        },
+        {
+          "id": 62,
+          "time": "2025-09-20T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 63,
+          "time": "2025-09-20T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 64,
+          "time": "2025-09-20T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 65,
+          "time": "2025-09-20T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 66,
+          "time": "2025-09-20T14:30:00+09:00",
+          "title": "世界の人気アプリ100個を分析して見えたペイウォール設計の心得",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 26,
+            "name": "Akihiro Kokubo",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/da8d40f2-3f67-458b-b133-5bca080b98e9.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/c06d6589-0bb2-4ac4-9648-d6d187a53154"
+        },
+        {
+          "id": 67,
+          "time": "2025-09-20T14:30:00+09:00",
+          "title": "iPhoneを用いたフライトシム用ヘッドトラッカーの自作事例",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 27,
+            "name": "Felix Chon",
+            "image_url": null
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/dfe5819b-6eb7-4880-a89e-411a839b794c"
+        },
+        {
+          "id": 68,
+          "time": "2025-09-20T14:30:00+09:00",
+          "title": "サーバなしで対戦ゲームが作れる！？純正フレームワークで実現するリアルタイム通信",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 31,
+            "name": "岡本龍太郎",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/4f67ee95-100a-49ff-bd7b-b17fe280212a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0db42660-4871-4203-9a8d-43bd40f67b81"
+        },
+        {
+          "id": 69,
+          "time": "2025-09-20T14:30:00+09:00",
+          "title": "watchOSで高負荷な処理を安定させるための工夫",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 32,
+            "name": "長尾 准誠",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/517902d1-e343-4c2b-8fde-65636d3b7ffb.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/f0e12a9f-12a6-4ca8-ba4d-6a6374eb4eb9"
+        },
+        {
+          "id": 70,
+          "time": "2025-09-20T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 71,
+          "time": "2025-09-20T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 72,
+          "time": "2025-09-20T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 73,
+          "time": "2025-09-20T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 74,
+          "time": "2025-09-20T15:05:00+09:00",
+          "title": "Swiftビルド弾丸ツアー - Swift Buildが作る新しいエコシステム",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 29,
+            "name": "giginet",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d90d0948-cdae-4bea-b8dd-98a202186d1a.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/c740120d-d52f-4100-986b-a24e8f0d3b87"
+        },
+        {
+          "id": 75,
+          "time": "2025-09-20T15:05:00+09:00",
+          "title": "Indoor Mapping Data Format を使った屋内フロアマップの表示",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 30,
+            "name": "Haruki Inoue",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/3ab2d5f9-1a09-4fd7-a65c-e3f215ed7b46.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/bc043c75-bab6-4d74-8676-7cae7ce461c3"
+        },
+        {
+          "id": 76,
+          "time": "2025-09-20T15:05:00+09:00",
+          "title": "アプリの「もっさり」を解決！MetricKitを活用したアプリのパフォーマンス改善",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 33,
+            "name": "otouto",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/02f395a0-1f77-47b5-9a5d-9a8700f7a4d9.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/60b10922-d684-4779-854d-efc3ee1af235"
+        },
+        {
+          "id": 77,
+          "time": "2025-09-20T15:05:00+09:00",
+          "title": "SwiftUI時代のスクショ保護〜セキュアなViewの作り方〜",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 34,
+            "name": "ビスター",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/cd01667e-c576-4c09-88b2-385a9ff095fd.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/54cd0419-8359-4e0c-8ab7-b4e8d5fa42e2"
+        },
+        {
+          "id": 78,
+          "time": "2025-09-20T15:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 79,
+          "time": "2025-09-20T15:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 80,
+          "time": "2025-09-20T15:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 81,
+          "time": "2025-09-20T15:25:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 82,
+          "time": "2025-09-20T15:40:00+09:00",
+          "title": "カスタムUIを作る覚悟",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 35,
+            "name": "まつじ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/41cd014e-2646-44dc-873a-6b50cc9e1879.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/c5ee3a90-1624-4912-8e52-c8049869d3b8"
+        },
+        {
+          "id": 83,
+          "time": "2025-09-20T15:40:00+09:00",
+          "title": "VisionFrameworkで実現する - プライバシーに配慮した「顔ぼかし」機能",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 36,
+            "name": "今泉智博",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/19cf03cc-535a-4b0a-b91f-371b393bd9ac.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/3364f396-ffc7-460d-a814-7b3ba4cc9be4"
+        },
+        {
+          "id": 84,
+          "time": "2025-09-20T15:40:00+09:00",
+          "title": "QRコードの仕様ってn種類あんねん",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 37,
+            "name": "Ryomm",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/50aaa36d-d97c-4a08-b323-cc7e4e2cb9e8.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/a1ddb24c-ecc2-4db7-8bce-5a002a1489e1"
+        },
+        {
+          "id": 85,
+          "time": "2025-09-20T15:40:00+09:00",
+          "title": "高セキュリティ要件を満たすためのiOSアプリ開発：MASVS v2.0.0対応から学ぶ実践知見",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 38,
+            "name": "あんとにー",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/4d07d34f-6546-4d22-b3f1-19afc3804053.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/64e4eeb3-f2ea-465c-9e91-27be0ccfe9a5"
+        },
+        {
+          "id": 86,
+          "time": "2025-09-20T16:00:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 87,
+          "time": "2025-09-20T16:00:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 88,
+          "time": "2025-09-20T16:00:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 89,
+          "time": "2025-09-20T16:00:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 90,
+          "time": "2025-09-20T16:05:00+09:00",
+          "title": "クローズ （70分）",
+          "track_id": 1,
+          "duration": 70,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 91,
+          "time": "2025-09-20T16:05:00+09:00",
+          "title": "クローズ （70分）",
+          "track_id": 2,
+          "duration": 70,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 92,
+          "time": "2025-09-20T16:15:00+09:00",
+          "title": "列車行程追跡アルゴリズムを書こう",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 39,
+            "name": "Chris Trott",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/0dc0a8bc-119f-43ff-8157-af40c3466d07.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/a5e991ef-fec8-420b-8da8-de1f38c58182"
+        },
+        {
+          "id": 93,
+          "time": "2025-09-20T16:15:00+09:00",
+          "title": "App Clip 5年史: 萌動と停滞のクロニクル",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 41,
+            "name": "log5",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/279a373f-267f-4dda-b123-ee0a82ac3a31.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/13904e65-88ab-4243-8755-731174cbc3ec"
+        },
+        {
+          "id": 94,
+          "time": "2025-09-20T16:35:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 95,
+          "time": "2025-09-20T16:35:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 96,
+          "time": "2025-09-20T16:50:00+09:00",
+          "title": "大規模アプリにおけるXcode Previews実用化までの道のり",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 40,
+            "name": "ikesyo",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/e083ce9d-0d90-45d0-8afe-a07f274cbe5a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/8283dd4a-8df4-49ea-ad77-b231139adff0"
+        },
+        {
+          "id": 97,
+          "time": "2025-09-20T16:50:00+09:00",
+          "title": "メモリ不足との戦い〜大量データを扱うアプリでの実践例〜",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 42,
+            "name": "ああうえ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/bc915466-8154-413e-8f52-cca2f568b142.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/755923cf-888f-4c71-a082-685dcb48b8aa"
+        },
+        {
+          "id": 98,
+          "time": "2025-09-20T17:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 99,
+          "time": "2025-09-20T17:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 100,
+          "time": "2025-09-20T17:25:00+09:00",
+          "title": "ルーキーズLT（7枠） （50分）",
+          "track_id": 1,
+          "duration": 50,
+          "is_sponsor": false,
+          "type": "lt",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 101,
+          "time": "2025-09-20T17:25:00+09:00",
+          "title": "ルーキーズLT（7枠） （50分）",
+          "track_id": 2,
+          "duration": 50,
+          "is_sponsor": false,
+          "type": "lt",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 102,
+          "time": "2025-09-20T17:30:00+09:00",
+          "title": "いいかい？ Derived Dataに秘匿情報を書き出すんじゃないぞ！",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 53,
+            "name": "山手 政実",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/b0153bb7-79ba-42a7-9602-8de5184306be.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/cf15082a-fbbe-4690-8ea2-c516c2bd1a03"
+        },
+        {
+          "id": 103,
+          "time": "2025-09-20T17:30:00+09:00",
+          "title": "商品がスキャンできない！ちょっとおバカな Vision フレームワーク",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 54,
+            "name": "Yu Takahashi",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/7621b268-5165-406b-9c5f-5083f5612afe.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/a07ed2f3-ee3b-4fee-b62e-9daaf316db84"
+        },
+        {
+          "id": 104,
+          "time": "2025-09-20T17:35:00+09:00",
+          "title": "自分で勝手に作ってた図書管理アプリが学校の案件に昇華しちゃった話",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 52,
+            "name": "ごみちゃん",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/ab8ac331-7b76-4547-9050-9b9cd45bfc38.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/3d23a1b8-bebc-4702-8cc2-93511e1b2c1a"
+        },
+        {
+          "id": 105,
+          "time": "2025-09-20T17:35:00+09:00",
+          "title": "リジェクトの嵐を越えて、個人開発SNSアプリがストアに載るまで",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 60,
+            "name": "ひなっこ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/b6cb6203-2d73-484b-969d-7f6593400ea8.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/e962c3e2-cc85-4247-947a-c0e6b83f340f"
+        },
+        {
+          "id": 106,
+          "time": "2025-09-20T17:40:00+09:00",
+          "title": "“Custom App”という選択肢──App Store配布の第三の道とその可能性",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 51,
+            "name": "磯崎雷太",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/765a1517-7144-42a4-9783-252449c6d3ac.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/34c23067-6b64-4d8e-a163-7b989775d3e1"
+        },
+        {
+          "id": 107,
+          "time": "2025-09-20T17:40:00+09:00",
+          "title": "全身画像からコーデアイテムを抽出し毎日にIRODORIを！デバイス完結型アプリを作る",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 59,
+            "name": "だーはま",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/931dd51e-5ae2-44f5-8fe6-e807dcfe5a3d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/7146de1b-8656-4167-ae80-64bce8cb773e"
+        },
+        {
+          "id": 108,
+          "time": "2025-09-20T17:45:00+09:00",
+          "title": "ヘッドジェスチャを検知して Vibe Cooking",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 50,
+            "name": "Kanta Oikawa",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/59f2a51e-8b84-4f78-ae46-dd176ec04d30.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/a4b86012-92c7-45f7-9070-06113a63012d"
+        },
+        {
+          "id": 109,
+          "time": "2025-09-20T17:45:00+09:00",
+          "title": "SwiftUI×WebSocketでリアルタイムチャット機能を作って大変だったこと",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 58,
+            "name": "Yoshitaka",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/76920482-6bbf-4c39-8c8e-ef0f528625c6.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/89779d1c-2536-4dfa-b3e1-485e03c6b0da"
+        },
+        {
+          "id": 110,
+          "time": "2025-09-20T17:50:00+09:00",
+          "title": "WebKit のバグ修正に挑戦してみた",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 49,
+            "name": "Megabits",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/40f47fb9-d4fc-42c6-b908-0a0269af8a9b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/771ff806-b3b6-46ea-8884-3de573496b59"
+        },
+        {
+          "id": 111,
+          "time": "2025-09-20T17:50:00+09:00",
+          "title": "Embedded Swift & Matterでスマートホーム対応デバイスを操作してみよう！",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 57,
+            "name": "Atsushi Miyaji",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/99fe2c9c-47ef-44b9-87e3-5476771c150d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/42a001a0-ddac-46dc-8d76-6836c7a0c6d9"
+        },
+        {
+          "id": 112,
+          "time": "2025-09-20T17:55:00+09:00",
+          "title": "iPhoneを光学式マウスにする試み",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 48,
+            "name": "aohara",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/1d7be2e9-8731-4058-8148-0e55952e6b7a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/1e4c3e3b-2731-4b0c-9990-d56f11760f6c"
+        },
+        {
+          "id": 113,
+          "time": "2025-09-20T17:55:00+09:00",
+          "title": "気づいて！アプリからのSOS 〜App Store ConnectAPIで始めるパフォーマンス健康診断〜",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 56,
+            "name": "Rikkuma",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/6ee90b87-f0d8-4b29-8ee4-08e18fc281c4.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/d7ecac63-7a69-4dfc-8cc8-24bb310f5101"
+        },
+        {
+          "id": 114,
+          "time": "2025-09-20T18:00:00+09:00",
+          "title": "ジムはOK、代々木公園はNG。位置判定アプリの奇妙な現象",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 47,
+            "name": "鈴木斗夢",
+            "image_url": null
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/695622d8-ad9e-4533-9237-cfa0be122eb0"
+        },
+        {
+          "id": 115,
+          "time": "2025-09-20T18:00:00+09:00",
+          "title": "MIDIコントローラーを用いたイコライザーアプリの拡張方法",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 55,
+            "name": "masacom",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/07dbc040-06fa-4325-bf47-ba31739caf85.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/88b5cb87-914e-4fc3-8b2c-2002e8cf9964"
+        },
+        {
+          "id": 116,
+          "time": "2025-09-20T18:25:00+09:00",
+          "title": "Today's Update",
+          "track_id": 1,
+          "duration": 15,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/22749084-cbd2-4927-8058-a39bd0f327bf"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Day 3",
+      "date": "2025-09-21T09:30:00+09:00",
+      "sessions": [
+        {
+          "id": 117,
+          "time": "2025-09-21T09:30:00+09:00",
+          "title": "開場 （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 118,
+          "time": "2025-09-21T10:00:00+09:00",
+          "title": "Today's Update",
+          "track_id": 1,
+          "duration": 15,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/10d21697-380e-4e97-97ef-11a370641c36"
+        },
+        {
+          "id": 119,
+          "time": "2025-09-21T10:30:00+09:00",
+          "title": "「iPhoneのマイナンバーカード」のすべて",
+          "track_id": 1,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 70,
+            "name": "Daiki Matsudate",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/5913c8f4-4cdc-4621-bb48-492ac7d3cf0d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/92480fdb-0cae-4b75-8471-348b02924fa9"
+        },
+        {
+          "id": 120,
+          "time": "2025-09-21T10:30:00+09:00",
+          "title": "Heart of Swift Concurrency",
+          "track_id": 2,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 71,
+            "name": "koher",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2eab4e66-31be-40b5-a7ab-33f8cb3a2a73.gif"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/9139ed8d-a3e2-4551-84c6-e39f60b58453"
+        },
+        {
+          "id": 121,
+          "time": "2025-09-21T10:30:00+09:00",
+          "title": "5000万ダウンロードを超える漫画サービスを支えるログ基盤の設計開発の全て",
+          "track_id": 3,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 73,
+            "name": "デスクス",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d122b109-9219-46c9-a106-d5010548323f.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/fc96e034-0a10-4f2b-a5b5-2a5e0602c12a"
+        },
+        {
+          "id": 122,
+          "time": "2025-09-21T10:30:00+09:00",
+          "title": "ゼロタップの世界へ - UWB × Nearby Interaction 実装ガイド",
+          "track_id": 4,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 74,
+            "name": "岡 優志",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a3060209-ab29-4f37-859a-1d944816cc05.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/42e85bf8-fe3b-4294-bc3d-a782195bf05b"
+        },
+        {
+          "id": 123,
+          "time": "2025-09-21T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 124,
+          "time": "2025-09-21T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 125,
+          "time": "2025-09-21T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 126,
+          "time": "2025-09-21T11:10:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 127,
+          "time": "2025-09-21T11:25:00+09:00",
+          "title": "止められない医療アプリ、そっと Swift 6 へ",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 63,
+            "name": "Shogo Yoshida",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/c22d3744-6cf2-449a-8a46-7a1dfadccf95.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/c06da97a-fe44-4303-86d7-619c339438d6"
+        },
+        {
+          "id": 128,
+          "time": "2025-09-21T11:25:00+09:00",
+          "title": "4100万ユーザーを支えるTVer iOSアプリ開発 〜0人から始まったチームのAI活用による挑戦〜",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 64,
+            "name": "福島 友稀",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/b9cdd184-aae3-4cc7-934d-623fb4ee8563.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/94d4e272-2413-430e-abaa-fe665f128c85"
+        },
+        {
+          "id": 129,
+          "time": "2025-09-21T11:25:00+09:00",
+          "title": "ネイティブ製ガントチャートUIを作って学ぶUICollectionViewLayoutの威力",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 65,
+            "name": "西 悠作",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/7d1d1279-6bdf-4ba7-8992-7c949d4532c1.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/324484f6-bc04-4c3d-ada6-f83bab0dd114"
+        },
+        {
+          "id": 130,
+          "time": "2025-09-21T11:25:00+09:00",
+          "title": "CI/CD「健康診断」のススメ。現場でのボトルネック特定から、健康診断を通じた組織的な改善手法",
+          "track_id": 4,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 66,
+            "name": "鵜沼 慶伍",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d6d9ad90-32fe-4dc5-8ef6-a98c6374b590.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/a0d9ee40-998d-494b-bd54-3a7517b6b448"
+        },
+        {
+          "id": 131,
+          "time": "2025-09-21T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 132,
+          "time": "2025-09-21T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 133,
+          "time": "2025-09-21T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 134,
+          "time": "2025-09-21T11:45:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 4,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 135,
+          "time": "2025-09-21T13:00:00+09:00",
+          "title": "時刻と位置特定の秘密を解き明かす 〜 大航海時代から未来の測位技術へ〜",
+          "track_id": 1,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 72,
+            "name": "綾木 良太",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/46235d76-d5a0-4d64-9cdc-a3e700abf35b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/570d90a8-b616-4e40-b83e-fac9e719c731"
+        },
+        {
+          "id": 136,
+          "time": "2025-09-21T13:00:00+09:00",
+          "title": "逆向きUIの世界〜iOSアプリのRTL言語対応〜",
+          "track_id": 2,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 75,
+            "name": "akatsuki174",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/6d57f67b-54b5-4074-b890-6563ef62cef1.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/43d7e2d8-4ffa-47a9-a35f-9a9100d17323"
+        },
+        {
+          "id": 137,
+          "time": "2025-09-21T13:00:00+09:00",
+          "title": "Apple Vision Proでの立体動画アプリの実装と40の工夫",
+          "track_id": 3,
+          "duration": 40,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 76,
+            "name": "服部 智",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/0d88cf6b-e9a5-4933-a127-be85c68c7868.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/59d79b95-2f21-4ad8-8188-8fb5cd2ca991"
+        },
+        {
+          "id": 138,
+          "time": "2025-09-21T13:00:00+09:00",
+          "title": "TBD",
+          "track_id": 4,
+          "duration": 115,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 92,
+            "name": "@hak & @tomzoh",
+            "image_url": null
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/aa8ff73a-fe8c-49e0-97f1-53e588cd8a30"
+        },
+        {
+          "id": 139,
+          "time": "2025-09-21T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 140,
+          "time": "2025-09-21T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 141,
+          "time": "2025-09-21T13:40:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 142,
+          "time": "2025-09-21T13:55:00+09:00",
+          "title": "少人数体制を実現するモバイルアプリ開発のDevEx改善",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 61,
+            "name": "417.72KI",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/3ef1238c-1198-4d95-a16e-fee24be42b1d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/c8dd7bcb-454d-40bf-9915-1144126296b8"
+        },
+        {
+          "id": 143,
+          "time": "2025-09-21T13:55:00+09:00",
+          "title": "『ホットペッパービューティー』のiOSアプリをUIKitからSwiftUIへ段階的に移行するためにやったこと",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": true,
+          "type": "normal",
+          "speaker": {
+            "id": 62,
+            "name": "Akihiro Kokubo",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a58adf2e-3f44-45fd-980b-9aa0e724bd4b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/0fba1890-bed5-408e-92e5-99e2dd8ceb8f"
+        },
+        {
+          "id": 144,
+          "time": "2025-09-21T13:55:00+09:00",
+          "title": "プログラマのための作曲入門",
+          "track_id": 1,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 69,
+            "name": "CHEEBOW",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/d401f8b7-b19b-4af6-abd4-896009386d21.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/d7c2cb69-d22a-475b-9d34-a5617a03199f"
+        },
+        {
+          "id": 145,
+          "time": "2025-09-21T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 146,
+          "time": "2025-09-21T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 147,
+          "time": "2025-09-21T14:15:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 148,
+          "time": "2025-09-21T14:20:00+09:00",
+          "title": "クローズ （35分）",
+          "track_id": 1,
+          "duration": 35,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 149,
+          "time": "2025-09-21T14:30:00+09:00",
+          "title": "独自UIで実現する外部ストレージデバイスの読み書き",
+          "track_id": 2,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 67,
+            "name": "かっくん",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/09b51d36-0210-4947-afcc-47bb415f560b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/6fcd6428-e47f-49b2-afc4-3f9d38199e65"
+        },
+        {
+          "id": 150,
+          "time": "2025-09-21T14:30:00+09:00",
+          "title": "CryptoKit ではじめる暗号技術 - メッセージ認証コード編",
+          "track_id": 3,
+          "duration": 20,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 68,
+            "name": "栗山徹",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/533b80cc-8d03-4286-af7b-1df5f411b0ee.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/10510f06-fb31-45da-895b-0e00ed0d8a2c"
+        },
+        {
+          "id": 151,
+          "time": "2025-09-21T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 2,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 152,
+          "time": "2025-09-21T14:50:00+09:00",
+          "title": "Q&A （5分）",
+          "track_id": 3,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "qa",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 153,
+          "time": "2025-09-21T15:05:00+09:00",
+          "title": "LT大会 前半戦（8枠） （55分）",
+          "track_id": 1,
+          "duration": 55,
+          "is_sponsor": false,
+          "type": "lt",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 154,
+          "time": "2025-09-21T15:10:00+09:00",
+          "title": "\"奇妙\"なSwift",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 78,
+            "name": "kntk",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/f85d7368-2a67-4f05-b732-986035320d1e.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/5d8aba2e-2123-4a63-bda8-74f68a40e64b"
+        },
+        {
+          "id": 155,
+          "time": "2025-09-21T15:15:00+09:00",
+          "title": "開発者への寄付をアプリ内課金として実装する時の気の使いどころ",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 91,
+            "name": "さかいゆうのすけ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/2b2f3d6d-f318-40bc-b766-69c35fc7502a.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/066da1d1-0b3a-45e9-9667-8af599a7e5c1"
+        },
+        {
+          "id": 156,
+          "time": "2025-09-21T15:20:00+09:00",
+          "title": "サブスクリプション価格変更の手引き",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 87,
+            "name": "縣美早",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/3c2a08f3-b593-4442-a561-a64136ba94c4.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/46dafe48-3b45-4caf-8de2-126314d8f0c6"
+        },
+        {
+          "id": 157,
+          "time": "2025-09-21T15:25:00+09:00",
+          "title": "「非更新サブスクリプション」って何者？",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 81,
+            "name": "haseken",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/30c50d96-9b92-43ee-b36b-f5a98a7217d1.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/2ac7622f-448a-4be7-a173-82a9a0392e04"
+        },
+        {
+          "id": 158,
+          "time": "2025-09-21T15:30:00+09:00",
+          "title": "その課金処理は安全だと思った？ - 課金バイパスの実例と対策",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 83,
+            "name": "Soh Satoh",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a2d576b5-6e91-4b8d-92e7-4d009d5a562d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/58c514a5-d322-4911-8522-7a4ee30fa704"
+        },
+        {
+          "id": 159,
+          "time": "2025-09-21T15:35:00+09:00",
+          "title": "iOS 17で追加されたSubscriptionStoreViewを利用して5分でサブスク実装チャレンジ",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 88,
+            "name": "atsuyan",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/6744b571-e17e-47c8-9dc4-b4ceaa346b87.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/b9c74bc4-d9c8-4a11-b617-0fbf21ff3bd6"
+        },
+        {
+          "id": 160,
+          "time": "2025-09-21T15:40:00+09:00",
+          "title": "見ないで！Focus Filterで守る自作ブラウザの黒歴史",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 89,
+            "name": "marcy731",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a7a3699f-41c3-4ec7-82fc-2aa631875b50.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/ccba8693-340c-4970-963a-b46e0113b572"
+        },
+        {
+          "id": 161,
+          "time": "2025-09-21T15:45:00+09:00",
+          "title": "このAPI、許可がいるの？",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 84,
+            "name": "いわい",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/48ca2285-5975-4e6d-b442-78871bbb3b1d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/8ffdbe3a-4f18-46a6-b3de-8cf9cbd104ed"
+        },
+        {
+          "id": 162,
+          "time": "2025-09-21T16:05:00+09:00",
+          "title": "LT大会 後半戦（7枠） （50分）",
+          "track_id": 1,
+          "duration": 50,
+          "is_sponsor": false,
+          "type": "lt",
+          "speaker": null,
+          "proposal_url": null
+        },
+        {
+          "id": 163,
+          "time": "2025-09-21T16:10:00+09:00",
+          "title": "TSPLのすすめ",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 86,
+            "name": "shiz",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/f1cb4d43-2b80-4242-91f1-f1d511b5a5f7.png"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/2eb454e9-2b26-48b9-9281-27ce2f950768"
+        },
+        {
+          "id": 164,
+          "time": "2025-09-21T16:15:00+09:00",
+          "title": "iOS→Flutter→iOS帰還：消えないFlutterの傷跡",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 90,
+            "name": "やまひろ",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/494d71ae-a1a2-499c-8d45-f6437c79ec2d.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/ecccc3fc-9aff-4c2f-b050-81da240dc680"
+        },
+        {
+          "id": 165,
+          "time": "2025-09-21T16:20:00+09:00",
+          "title": "猫と暮らすネットワークカメラ生活🐈 ~Vision.frameworkでペットを愛でよう~",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 77,
+            "name": "yutailang0119",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/209e1a5b-b995-400c-b495-068ab73e645b.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/292e2ec3-d74b-49a6-a8cb-63c2883d589e"
+        },
+        {
+          "id": 166,
+          "time": "2025-09-21T16:25:00+09:00",
+          "title": "WebエンジニアがSwiftをブラウザで動かすプレイグラウンドを作ってみた",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 79,
+            "name": "うーたん",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/159b3223-3bb0-4fdf-8f0c-0e17d41e3331.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/f71e096d-1452-4e81-b0f4-c8a46dac557c"
+        },
+        {
+          "id": 167,
+          "time": "2025-09-21T16:30:00+09:00",
+          "title": "末尾再帰なら安心でしょ？って信じてたSwiftコードが落ちた夜",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 80,
+            "name": "吉岡祐樹",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/30f45d54-2aff-44b4-ab23-04f0fec48a5c.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/e914869b-ba90-4409-b22a-f2cdb8f5b699"
+        },
+        {
+          "id": 168,
+          "time": "2025-09-21T16:35:00+09:00",
+          "title": "〜あれから 6 年〜 完全に同じ開発環境を素早く用意できる（もしくはできない）技術 2025",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 82,
+            "name": "Steve Aoki",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/a913abcd-e371-43b9-bacf-206d6b81dcb4.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/45b0c1e2-8f11-44b5-b376-595dd8a57932"
+        },
+        {
+          "id": 169,
+          "time": "2025-09-21T16:40:00+09:00",
+          "title": "HyperCard温故知新",
+          "track_id": 1,
+          "duration": 5,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 85,
+            "name": "三原亮介",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/53622551-2499-4c5a-adce-9239a746dd90.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/edf39cc0-6ced-4ac2-8b66-6a7ab3eb9bdc"
+        },
+        {
+          "id": 170,
+          "time": "2025-09-21T17:10:00+09:00",
+          "title": "クロージング",
+          "track_id": 1,
+          "duration": 30,
+          "is_sponsor": false,
+          "type": "normal",
+          "speaker": {
+            "id": 13,
+            "name": "長谷川智希",
+            "image_url": "https://fortee.jp/files/iosdc-japan-2025/speaker/68c5c79e-7a3a-4d44-a725-29ad8ca27dda.jpg"
+          },
+          "proposal_url": "https://fortee.jp/iosdc-japan-2025/proposal/ecb4db4b-7952-45b9-bae7-a777176e2fef"
+        },
+        {
+          "id": 171,
+          "time": "2025-09-21T18:00:00+09:00",
+          "title": "懇親会 （120分）",
+          "track_id": 1,
+          "duration": 120,
+          "is_sponsor": false,
+          "type": "other",
+          "speaker": null,
+          "proposal_url": null
+        }
+      ]
+    }
+  ]
+}
