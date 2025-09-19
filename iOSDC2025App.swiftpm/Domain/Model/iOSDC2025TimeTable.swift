@@ -6,7 +6,8 @@
 //
 
 // Resources/iosdc2025_timetable.json
-struct IOSDC2025Timetable {
-    let track: [iOSDCTrack]
+
+struct IOSDC2025Timetable: Decodable {
+    let tracks: [iOSDCTrack]
     let days: [iOSDCDay]
 }

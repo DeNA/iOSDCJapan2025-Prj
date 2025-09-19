@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct iOSDCDay: Identifiable {
+struct iOSDCDay: Identifiable, Decodable {
     let id: Int
     let title: String
     let date: Date
-    let sessions: [String] // TODO: TBD
+    let sessions: [String]
 }

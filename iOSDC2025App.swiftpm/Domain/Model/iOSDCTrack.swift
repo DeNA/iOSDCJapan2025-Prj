@@ -5,6 +5,8 @@
 //  Created by iosdc-dena on 2025/09/19.
 //
 
-struct iOSDCTrack {
-    let tbd: String // TODO: TBD
+struct iOSDCTrack: Identifiable, Decodable {
+    var id: Int
+    var name: String
+    var hashtag: String
 }
