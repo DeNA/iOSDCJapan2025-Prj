@@ -21,6 +21,15 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("iOSDC Time Table")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        // TODO: - TBD
+                    } label: {
+                        Image(systemName: "menucard")
+                    }
+                }
+            }
         }
     }
 }
