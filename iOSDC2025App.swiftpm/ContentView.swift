@@ -2,14 +2,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            ForEach(timetable.days, id: \.id) { day in
-                Section {
-                    Text("TBD")
-                } header: {
-                    Text(day.title)
+        NavigationStack {
+            List {
+                ForEach(timetable.days, id: \.id) { day in
+                    Section {
+                        Text("TBD")
+                    } header: {
+                        Text(day.title)
+                    }
                 }
             }
+            .navigationTitle("Time Table")
         }
     }
 }
