@@ -9,7 +9,8 @@ struct ContentView: View {
                         ForEach(day.sessions, id: \.id) { session in
                             Button(action: {
                             }) {
-                                VStack {
+                                VStack(alignment: .leading) {
+                                    Text(session.time.dateString)
                                     Text(session.title)
                                         .font(.title)
                                     // TODO: もっとおしゃれにしてください
@@ -39,6 +40,16 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+extension Date {
+    var dateString: String {
+        let calendar = Calendar(identifier: .gregorian)
+        let formatter = DateFormatter()
+        formatter.calendar = calendar
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        return formatter.string(from: self)
+    }
 }
 
 let timetable: IOSDC2025Timetable = {
