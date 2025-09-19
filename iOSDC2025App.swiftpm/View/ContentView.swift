@@ -6,13 +6,16 @@ struct ContentView: View {
             TabView {
                 ForEach(timetable.days, id: \.id) { day in
                     List {
-                        Section {
+                        ForEach(day.sessions, id: \.id) { session in
                             Button(action: {
                             }) {
-                                Text("TBD")
+                                VStack {
+                                    Text(session.title)
+                                        .font(.title)
+                                    // TODO: もっとおしゃれにしてください
+                                }
                             }
-                        } header: {
-                            Text(day.title)
+                            .buttonStyle(.plain)
                         }
                     }
                     .tabItem {
@@ -32,6 +35,10 @@ struct ContentView: View {
             }
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
 
 let timetable: IOSDC2025Timetable = {
