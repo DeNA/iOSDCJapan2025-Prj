@@ -20,26 +20,11 @@ struct ContentView: View {
     }
 }
 
-let timetable: Timetable = {
+let timetable: IOSDC2025Timetable = {
     let url = Bundle.main.url(forResource: "iosdc2025_timetable", withExtension: "json")!
     let data = try! Data(contentsOf: url)
     let decoder = JSONDecoder()
     decoder.keyDecodingStrategy = .convertFromSnakeCase
-    return try! decoder.decode(Timetable.self, from: data)
+    decoder.dateDecodingStrategy = .iso8601
+    return try! decoder.decode(IOSDC2025Timetable.self, from: data)
 }()
-
-struct Timetable: Codable {
-    let days: [Day]
-}
-
-struct Day: Codable {
-    let id: Int
-    let title: String
-    let sessions: [Session]
-}
-
-struct Session: Codable {
-    let id: Int
-    let title: String
-    let trackId: Int
-}

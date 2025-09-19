@@ -11,5 +11,5 @@ struct iOSDCDay: Identifiable, Decodable {
     let id: Int
     let title: String
     let date: Date
-    let sessions: [String]
+    let sessions: [iOSDCSession]
 }
