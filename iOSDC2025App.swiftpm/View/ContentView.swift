@@ -3,15 +3,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            List {
+            TabView {
                 ForEach(timetable.days, id: \.id) { day in
-                    Section {
-                        Button(action: {                            
-                        }) {
-                            Text("TBD")
+                    List {
+                        Section {
+                            Button(action: {
+                            }) {
+                                Text("TBD")
+                            }
+                        } header: {
+                            Text(day.title)
                         }
-                    } header: {
-                        Text(day.title)
+                    }
+                    .tabItem {
+                        Label(day.title, systemImage: "\(day.id - 1).circle")
                     }
                 }
             }
