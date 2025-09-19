@@ -6,7 +6,10 @@ struct ContentView: View {
             List {
                 ForEach(timetable.days, id: \.id) { day in
                     Section {
-                        Text("TBD")
+                        Button(action: {                            
+                        }) {
+                            Text("TBD")
+                        }
                     } header: {
                         Text(day.title)
                     }
