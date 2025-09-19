@@ -12,7 +12,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Time Table")
+            .navigationTitle("iOSDC Time Table")
         }
     }
 }
