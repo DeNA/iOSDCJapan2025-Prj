@@ -3,6 +3,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var searchText: String = ""
     @State private var trackId: Int = 0
+    @State private var isCreditViewPresented = false
+    
     var body: some View {
             TabView {
                 ForEach(timetable.days, id: \.id) { day in
@@ -81,11 +83,14 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    // TODO: - TBD
+                    isCreditViewPresented = true
                 } label: {
-                    Image(systemName: "menucard")
+                    Image(systemName: "signature")
                 }
             }
+        }
+        .sheet(isPresented: $isCreditViewPresented) {
+            CreditsView()
         }
     }
     
