@@ -11,7 +11,8 @@ import SwiftUI
 struct DetailView: View {
     let track: iOSDCTrack?
     let session: iOSDCSession
-    
+    @State var counter : Int = 0
+    @State var flag : Bool = false
     var body: some View {
         ScrollView {
             VStack(spacing: 32) {
@@ -20,8 +21,9 @@ struct DetailView: View {
                         image
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 200)
+                            .frame(height: flag ? 300 : 200)
                             .clipShape(Circle())
+                            .animation(.linear, value: flag)
                     } placeholder: {
                         Color.gray
                             .scaledToFit()
@@ -30,9 +32,16 @@ struct DetailView: View {
                     }
                 
                 VStack(spacing: 16) {
-                    Text(session.speaker?.name ?? "---")
-                        .font(.title2)
-                    
+                        Text(session.speaker?.name ?? "---")
+                            .font(.title2)
+                            .foregroundStyle(Color.black)
+                            .onTapGesture {apGesture in
+                                counter += 1
+                                
+                                if counter.isMultiple(of: 10) {
+                                    flag.toggle()
+                                }
+                            }
                     Text(session.title)
                         .font(.title)
                         .fontWeight(.bold)
