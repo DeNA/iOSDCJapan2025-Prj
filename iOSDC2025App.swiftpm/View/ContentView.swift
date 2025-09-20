@@ -7,8 +7,9 @@ struct ContentView: View {
                 ForEach(timetable.days, id: \.id) { day in
                     List {
                         ForEach(day.sessions, id: \.id) { session in
-                            Button(action: {
-                            }) {
+                            NavigationLink {
+                                DetailView(session: session)
+                            } label: {
                                 HStack(alignment: .center) {
                                     VStack(alignment: .leading, spacing: 8) {
                                         HStack {
@@ -30,7 +31,6 @@ struct ContentView: View {
                                 }
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             }
-                            .buttonStyle(.plain)
                         }
                     }
                     .tabItem {
@@ -68,16 +68,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-
-extension Date {
-    var dateString: String {
-        let calendar = Calendar(identifier: .gregorian)
-        let formatter = DateFormatter()
-        formatter.calendar = calendar
-        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-        return formatter.string(from: self)
-    }
 }
 
 let timetable: IOSDC2025Timetable = {
