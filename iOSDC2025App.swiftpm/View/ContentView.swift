@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchText: String = ""
     var body: some View {
         NavigationStack {
             TabView {
                 ForEach(timetable.days, id: \.id) { day in
                     List {
-                        ForEach(day.sessions, id: \.id) { session in
+                        ForEach(filter(sessions: day.sessions, text: searchText), id: \.id) { session in
                             NavigationLink {
                                 // TODO: iOSDCTrack の取得方法ちょっとダサいので任せた
                                 DetailView(track: timetable.tracks.track(id: session.trackId), session: session)
@@ -50,6 +51,7 @@ struct ContentView: View {
                 }
             }
         }
+        .searchable(text: $searchText, placement: .navigationBarDrawer)
     }
     
     @ViewBuilder
@@ -64,6 +66,14 @@ struct ContentView: View {
             .frame(width: 60, height: 60)
             .clipShape(Circle())
         }
+    }
+    
+    // TODO: atsuyan Viewでフィルターしてるの微妙なのでモデルに移したい...
+    private func filter(sessions: [iOSDCSession], text: String) -> [iOSDCSession] {
+        guard !text.isEmpty else {
+            return sessions
+        }
+        return sessions.filter({ $0.title.contains(text) })
     }
 }
 
