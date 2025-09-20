@@ -76,7 +76,7 @@ struct DetailView: View {
                             // Use Foundation Models to imagine a session summary from the title
                             let instructions =  "次のセッションタイトルから、参加者が内容を把握できる日本語の短い概要(2-3文)を作成してください"
                             let session = LanguageModelSession(instructions: instructions)
-                            let model = SystemLanguageModel.default
+                            _ = SystemLanguageModel.default
                             let output = try await session.respond(to: self.session.title)
                             // Keep it concise
                             summary = output.content
