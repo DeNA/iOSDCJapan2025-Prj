@@ -2,12 +2,36 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var searchText: String = ""
+    @State private var trackId: Int = 0
     var body: some View {
             TabView {
                 ForEach(timetable.days, id: \.id) { day in
                     Tab(day.title, systemImage: "\(day.id - 1).circle") {
                         NavigationStack {
-                            daylist(day: day)
+                            // TODO: コンポーネント化とボタンの色UXよくしてください
+                        HStack {
+                            Button(action: {
+                                trackId = 0
+                            }) {
+                                Text("TrackA")
+                            }
+                            Button(action: {
+                                trackId = 1
+                            }) {
+                                Text("TrackB")
+                            }
+                            Button(action: {
+                                trackId = 2
+                            }) {
+                                Text("TrackC")
+                            }
+                            Button(action: {
+                                trackId = 3
+                            }) {
+                                Text("TrackD")
+                            }
+                        }
+                            daylist(day: day, trackId: trackId)
                         }
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
                     }
@@ -34,17 +58,17 @@ struct ContentView: View {
     }
     
     // TODO: atsuyan Viewでフィルターしてるの微妙なのでモデルに移したい...
-    private func filter(sessions: [iOSDCSession], text: String) -> [iOSDCSession] {
+    private func filter(sessions: [iOSDCSession], text: String, trackId: Int?) -> [iOSDCSession] {
         guard !text.isEmpty else {
-            return sessions
+            return sessions.filter({$0.trackId == trackId})
         }
         return sessions.filter({ $0.title.contains(text) })
     }
     
     @ViewBuilder
-    func daylist(day: iOSDCDay) -> some View {
+    func daylist(day: iOSDCDay, trackId: Int) -> some View {
         List {
-            ForEach(filter(sessions: day.sessions, text: searchText), id: \.id) { session in
+            ForEach(filter(sessions: day.sessions, text: searchText, trackId: trackId), id: \.id) { session in
                 NavigationLink {
                     // TODO: iOSDCTrack の取得方法ちょっとダサいので任せた
                     DetailView(track: timetable.tracks.track(id: session.trackId), session: session)
@@ -70,7 +94,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 let sessions = timetable.days.compactMap(\.self).flatMap { $0.sessions }
-                ForEach(filter(sessions: sessions, text: searchText), id: \.id) { session in
+                ForEach(filter(sessions: sessions, text: searchText, trackId: nil), id: \.id) { session in
                     NavigationLink {
                         // TODO: iOSDCTrack の取得方法ちょっとダサいので任せた
                         DetailView(track: timetable.tracks.track(id: session.trackId), session: session)
