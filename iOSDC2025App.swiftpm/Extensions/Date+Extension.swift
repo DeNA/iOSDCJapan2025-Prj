@@ -8,6 +8,7 @@
 import Foundation
 
 extension Date {
+    @available(*, deprecated, message: "Use the FormatStyle.")
     var dateString: String {
         let formatter = formatter(format: "yyyy/MM/dd HH:mm:ss")
         return formatter.string(from: self)

@@ -2,47 +2,49 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var searchText: String = ""
-    @State private var trackId: Int = 0
+    @State private var trackKind: TrackKind = .trackA
     @State private var isCreditViewPresented = false
     
+    enum TrackKind: String, CaseIterable, Identifiable {
+        case trackA = "Track A"
+        case trackB = "Track B"
+        case trackC = "Track C"
+        case trackD = "Track D"
+        
+        var id: Int {
+            switch self {
+            case .trackA: 0
+            case .trackB: 1
+            case .trackC: 2
+            case .trackD: 3
+            }
+        }
+    }
+    
     var body: some View {
-            TabView {
-                ForEach(timetable.days, id: \.id) { day in
-                    Tab(day.title, systemImage: "\(day.id - 1).circle") {
-                        NavigationStack {
-                            // TODO: コンポーネント化とボタンの色UXよくしてください
-                        HStack {
-                            Button(action: {
-                                trackId = 0
-                            }) {
-                                Text("TrackA")
-                            }
-                            Button(action: {
-                                trackId = 1
-                            }) {
-                                Text("TrackB")
-                            }
-                            Button(action: {
-                                trackId = 2
-                            }) {
-                                Text("TrackC")
-                            }
-                            Button(action: {
-                                trackId = 3
-                            }) {
-                                Text("TrackD")
+        TabView {
+            ForEach(timetable.days, id: \.id) { day in
+                Tab(day.title, systemImage: "\(day.id - 1).circle") {
+                    NavigationStack {
+                        Picker("", selection: $trackKind) {
+                            ForEach(TrackKind.allCases) { kind in
+                                Text(kind.rawValue)
+                                    .tag(kind)
                             }
                         }
-                            daylist(day: day, trackId: trackId)
-                        }
-                        .searchable(text: $searchText, placement: .navigationBarDrawer)
+                        .pickerStyle(.segmented)
+                        daylist(day: day, trackId: trackKind.id)
                     }
+                    .searchable(text: $searchText, placement: .navigationBarDrawer)
                 }
-                Tab(role: .search) {
-                    searchView()
-                        .searchable(text: $searchText, placement: .navigationBarDrawer)
-                }
-            }.tabBarMinimizeBehavior(.onScrollUp)
+            }
+            Tab(role: .search) {
+                searchView()
+                    .searchable(text: $searchText, placement: .navigationBarDrawer)
+            }
+            
+            
+        }.tabBarMinimizeBehavior(.onScrollUp)
     }
     
     @ViewBuilder
@@ -130,11 +132,15 @@ struct ContentCell: View {
     let session: iOSDCSession
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 12) {
             // 時刻とトラックを表示するヘッダー
             HStack {
-                Text(session.startTime.dateString)
+                Text(session.startTime, format: .dateTime)
+                    .monospacedDigit()
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Text(timetable.tracks[session.trackId].name)
+                    .font(.caption)
+                    .bold()
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3).foregroundStyle(.white)
                     .background {
@@ -150,10 +156,12 @@ struct ContentCell: View {
                     }.clipShape(Capsule())
             }
             
-            HStack(alignment: .center) {
-                VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .center, spacing: 12) {
+                speakerImage(session: session)
+                
+                VStack(alignment: .leading, spacing: 4) {
                     Text(session.title)
-                        .font(.title)
+                        .bold()
                     // TODO: もっとおしゃれにしてください
                     if let speaker = session.speaker {
                         VStack(alignment: .leading, spacing: 4) {
@@ -162,9 +170,6 @@ struct ContentCell: View {
                     }
                 }
                 
-                Spacer()
-                
-                speakerImage(session: session)
             }
             
         }
@@ -180,7 +185,7 @@ struct ContentCell: View {
                     image.image?.resizable()
                 }
             )
-            .frame(width: 60, height: 60)
+            .frame(width: 56, height: 56)
             .clipShape(Circle())
         }
     }
@@ -194,4 +199,4 @@ extension Array where Element == iOSDCTrack {
     }
     
 }
-        
+
