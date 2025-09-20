@@ -125,14 +125,14 @@ struct ContentCell: View {
     let session: iOSDCSession
     
     var body: some View {
-        HStack(alignment: .center) {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack {
-                    Text(session.startTime.dateString)
-                    Text(timetable.tracks[session.trackId].name)
-                        .padding(.horizontal, 4)
-                        .padding(.vertical, 3).foregroundStyle(.white)
-                        .background {
+        VStack(alignment: .leading) {
+            // 時刻とトラックを表示するヘッダー
+            HStack {
+                Text(session.startTime.dateString)
+                Text(timetable.tracks[session.trackId].name)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3).foregroundStyle(.white)
+                    .background {
                         if session.trackId == 0 {
                             Color.red
                         } else if session.trackId == 1 {
@@ -143,19 +143,25 @@ struct ContentCell: View {
                             Color.blue
                         }
                     }.clipShape(Capsule())
-                }
-                Text(session.title)
-                    .font(.title)
-                // TODO: もっとおしゃれにしてください
-                if let speaker = session.speaker {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(speaker.name)
+            }
+            
+            HStack(alignment: .center) {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(session.title)
+                        .font(.title)
+                    // TODO: もっとおしゃれにしてください
+                    if let speaker = session.speaker {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(speaker.name)
+                        }
                     }
                 }
+                
+                Spacer()
+                
+                speakerImage(session: session)
             }
-            .padding(4)
-            Spacer()
-            speakerImage(session: session)
+            
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
