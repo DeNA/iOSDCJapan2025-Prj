@@ -81,7 +81,8 @@ struct ContentView: View {
                 }
             }
         }
-        .navigationTitle("iOSDC Time Table")
+        .navigationTitle("iOSDC Japan 2025 Time Table")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
