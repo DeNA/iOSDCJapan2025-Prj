@@ -130,6 +130,19 @@ struct ContentCell: View {
                 HStack {
                     Text(session.startTime.dateString)
                     Text(timetable.tracks[session.trackId].name)
+                        .padding(.horizontal, 4)
+                        .padding(.vertical, 3).foregroundStyle(.white)
+                        .background {
+                        if session.trackId == 0 {
+                            Color.red
+                        } else if session.trackId == 1 {
+                            Color.orange
+                        } else if session.trackId == 2 {
+                            Color.green
+                        } else if session.trackId == 3 {
+                            Color.blue
+                        }
+                    }.clipShape(Capsule())
                 }
                 Text(session.title)
                     .font(.title)
