@@ -9,6 +9,8 @@ import Foundation
 
 struct iOSDCDay: Identifiable, Decodable {
     let id: Int
+    // TODO: S_Shimotori
+    /// The human-readable title e.g. "Day 0".
     let title: String
     let date: Date
     let sessions: [iOSDCSession]
