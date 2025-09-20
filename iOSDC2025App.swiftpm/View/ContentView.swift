@@ -11,7 +11,10 @@ struct ContentView: View {
                             }) {
                                 HStack(alignment: .center) {
                                     VStack(alignment: .leading, spacing: 8) {
-                                        Text(session.time.dateString)
+                                        HStack {
+                                            Text(session.time.dateString)
+                                            Text(timetable.tracks[session.trackId].name)
+                                        }
                                         Text(session.title)
                                             .font(.title)
                                         // TODO: もっとおしゃれにしてください
