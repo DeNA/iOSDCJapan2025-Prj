@@ -9,12 +9,23 @@ struct ContentView: View {
                         ForEach(day.sessions, id: \.id) { session in
                             Button(action: {
                             }) {
-                                VStack(alignment: .leading) {
-                                    Text(session.time.dateString)
-                                    Text(session.title)
-                                        .font(.title)
-                                    // TODO: もっとおしゃれにしてください
+                                HStack(alignment: .center) {
+                                    VStack(alignment: .leading, spacing: 8) {
+                                        Text(session.time.dateString)
+                                        Text(session.title)
+                                            .font(.title)
+                                        // TODO: もっとおしゃれにしてください
+                                        if let speaker = session.speaker {
+                                            VStack(alignment: .leading, spacing: 4) {
+                                                Text(speaker.name)
+                                            }
+                                        }
+                                    }
+                                    .padding(4)
+                                    Spacer()
+                                    speakerImage(session: session)
                                 }
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             }
                             .buttonStyle(.plain)
                         }
@@ -34,6 +45,20 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    func speakerImage(session: iOSDCSession) -> some View {
+        if let imageUrl = session.speaker?.imageUrl {
+            AsyncImage(
+                url: imageUrl,
+                content: { image in
+                    image.image?.resizable()
+                }
+            )
+            .frame(width: 60, height: 60)
+            .clipShape(Circle())
         }
     }
 }
