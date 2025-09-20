@@ -8,12 +8,13 @@ struct ContentView: View {
                     List {
                         ForEach(day.sessions, id: \.id) { session in
                             NavigationLink {
-                                DetailView(session: session)
+                                // TODO: iOSDCTrack の取得方法ちょっとダサいので任せた
+                                DetailView(track: timetable.tracks.track(id: session.trackId), session: session)
                             } label: {
                                 HStack(alignment: .center) {
                                     VStack(alignment: .leading, spacing: 8) {
                                         HStack {
-                                            Text(session.time.dateString)
+                                            Text(session.startTime.dateString)
                                             Text(timetable.tracks[session.trackId].name)
                                         }
                                         Text(session.title)
@@ -78,3 +79,14 @@ let timetable: IOSDC2025Timetable = {
     decoder.dateDecodingStrategy = .iso8601
     return try! decoder.decode(IOSDC2025Timetable.self, from: data)
 }()
+
+
+
+// MARK: -
+
+extension Array where Element == iOSDCTrack {
+    func track(id: Int) -> iOSDCTrack? {
+        self.first { $0.id == id }
+    }
+    
+}

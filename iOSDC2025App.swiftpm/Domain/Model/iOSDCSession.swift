@@ -9,7 +9,7 @@ import Foundation
 
 struct iOSDCSession: Identifiable, Decodable {
     var id: Int
-    var time: Date
+    var startTime: Date
     var title: String
     var trackId: Int
     var duration: Int
