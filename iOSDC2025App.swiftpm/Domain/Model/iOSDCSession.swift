@@ -12,8 +12,7 @@ struct iOSDCSession: Identifiable, Decodable {
     var startTime: Date
     var title: String
     var trackId: Int
-    // TODO: S_Shimotori
-    /// The duration of the session, in minutes.
+    /// This session's duration, in minutes.
     var duration: Int
     var isSponsor: Bool
     var type: SessionType

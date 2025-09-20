@@ -16,7 +16,7 @@ struct ContentView: View {
                     searchView()
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
                 }
-            }
+            }.tabBarMinimizeBehavior(.onScrollUp)
     }
     
     @ViewBuilder
@@ -146,3 +146,4 @@ extension Array where Element == iOSDCTrack {
     }
     
 }
+        

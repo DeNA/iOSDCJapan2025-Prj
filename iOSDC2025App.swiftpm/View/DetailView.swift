@@ -2,17 +2,21 @@
 //  SwiftUIView.swift
 //  iOSDC2025App
 //
-//  Created by iosdc-dena on 2025/09/20.
+//  Created by @mimimi1204 on 2025/09/20.
 //
 
 import SwiftUI
-
+import FoundationModels
 
 struct DetailView: View {
     let track: iOSDCTrack?
     let session: iOSDCSession
     @State var counter : Int = 0
     @State var flag : Bool = false
+    @State var summary: String? = nil
+    @State private var isGenerating = false
+    @State private var generationError: String? = nil
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 32) {
@@ -35,7 +39,7 @@ struct DetailView: View {
                         Text(session.speaker?.name ?? "---")
                             .font(.title2)
                             .foregroundStyle(Color.black)
-                            .onTapGesture {apGesture in
+                            .onTapGesture {
                                 counter += 1
                                 
                                 if counter.isMultiple(of: 10) {
@@ -64,6 +68,49 @@ struct DetailView: View {
                 
                 Divider()
                 
+                Button {
+                    Task {
+                        isGenerating = true
+                        generationError = nil
+                        do {
+                            // Use Foundation Models to imagine a session summary from the title
+                            let instructions =  "次のセッションタイトルから、参加者が内容を把握できる日本語の短い概要(2-3文)を作成してください"
+                            let session = LanguageModelSession(instructions: instructions)
+                            let model = SystemLanguageModel.default
+                            let output = try await session.respond(to: self.session.title)
+                            // Keep it concise
+                            summary = output.content
+                        } catch {
+                            generationError = error.localizedDescription
+                        }
+                        isGenerating = false
+                    }
+                } label: {
+                    Text("トークの内容を想像する")
+                }
+                
+                if isGenerating {
+                    ProgressView("想像中💭")
+                }
+
+                if let generationError {
+                    Text("生成に失敗しました: \(generationError)")
+                        .font(.footnote)
+                        .foregroundStyle(.red)
+                }
+
+                if let summary {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("概要")
+                            .font(.headline)
+                        Text(summary)
+                            .font(.body)
+                            .foregroundStyle(.primary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                }
+
             }
             .padding(.vertical, 40)
         }
@@ -88,3 +135,4 @@ struct DetailView: View {
         session: timetable.days.first!.sessions[1]
     )
 }
+
