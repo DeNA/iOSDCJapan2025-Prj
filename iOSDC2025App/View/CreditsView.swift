@@ -12,10 +12,10 @@ struct CreditsView: View {
     @Environment(\.dismiss) var dismiss
 
     // スクロール設定
-    private let scrollDuration: TimeInterval = 10.0
+    private let scrollDuration: TimeInterval = 7 * 10
 
     // クレジット名
-    private let names: [String] = [
+    private static let names: [String] = [
         "armtic",
         "のっちー",
         "Rei",
@@ -54,7 +54,7 @@ struct CreditsView: View {
         // add your name
     ]
 
-    @State private var timer: Timer?
+    @State private var scrollDirection: ScrollDirection = .top
 
     @State private var viewHeight: CGFloat = .zero
     
@@ -63,68 +63,54 @@ struct CreditsView: View {
             ScrollViewReader { proxy in
                 ScrollView {
                     VStack(alignment: .center, spacing: 8) {
-                        Color.clear
-                            .frame(height: 1)
-                            .id("top")
-
+                        
+                        Spacer().frame(height: viewHeight * 0.7)
+                        
                         VStack(alignment: .center, spacing: 8) {
-                            ForEach(names, id: \.self) { name in
+                            ForEach((0...9).flatMap { _ in Self.names }, id: \.self) { name in
                                 Text(name)
-                                    .font(.system(size: 22))
+                                    .font(.system(size: 26))
+                                    .bold()
                                     .foregroundStyle(.white)
-                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.vertical, 4)
+                                    .padding(.leading, 32)
                             }
                         }
                         .padding(.bottom, 32)
                         
-                        Spacer().frame(height: viewHeight)
-                        
-                        Color.clear
+                        Spacer()
                             .frame(height: 1)
                             .id("bottom")
                     }
                     .padding()
                 }
                 .background {
-                    Color.black
-                        .ignoresSafeArea()
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.blue, Color.purple]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                    .ignoresSafeArea()
                 }
                 .onGeometryChange(for: CGFloat.self, of: { proxy in
-                    proxy.size.height
+                    proxy.size.height + proxy.safeAreaInsets.top
                 }, action: { newValue in
                     viewHeight = newValue
                 })
-                .onAppear {
-                    proxy.scrollTo("top", anchor: .top)
-
-                    timer?.invalidate()
-                    timer = Timer.scheduledTimer(
-                        withTimeInterval: scrollDuration,
-                        repeats: true
-                    ) { _ in
-                        withAnimation(.linear(duration: scrollDuration)) {
-                            proxy.scrollTo("bottom", anchor: .bottom)
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + scrollDuration + 3.0) {
-                            withAnimation(nil) {
-                                proxy.scrollTo("top", anchor: .top)
-                            }
-                        }
+                .task {
+                    withAnimation(.linear(duration: scrollDuration)) {
+                        proxy.scrollTo("bottom", anchor: .bottom)
                     }
                 }
-                .onDisappear {
-                    timer?.invalidate()
-                    timer = nil
-                }
             }
+            .scrollDisabled(true)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     dismissButton()
                 }
                 ToolbarItem(placement: .principal) {
-                    Text("🎉CONTRIBUTORS🎉")
+                    Text("CONTRIBUTORS")
                         .foregroundStyle(.white)
                         .font(.title2)
                         .frame(maxWidth: .infinity, alignment: .center)
@@ -145,4 +131,9 @@ struct CreditsView: View {
 
 #Preview {
     CreditsView()
+}
+
+enum ScrollDirection {
+    case top
+    case bottom
 }
