@@ -19,14 +19,6 @@ struct ContentView: View {
             ForEach(timetable.days, id: \.id) { day in
                 Tab(day.title, systemImage: "\(day.id - 1).circle") {
                     NavigationStack {
-                        Picker("", selection: $trackKind) {
-                            ForEach(timetable.tracks) { track in
-                                Text(track.name)
-                                    .tag(TrackKind(rawValue: track.id)!)
-                            }
-                        }
-                        .pickerStyle(.segmented)
-                        .padding(.horizontal)
                         daylist(day: day, trackId: trackKind.id)
                     }
                 }
@@ -85,6 +77,16 @@ struct ContentView: View {
                 }
             }
         }
+        .safeAreaBar(edge: .top, content: {
+                Picker("", selection: $trackKind) {
+                    ForEach(timetable.tracks) { track in
+                        Text(track.name)
+                            .tag(TrackKind(rawValue: track.id)!)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding(.horizontal)
+        })
         .sheet(isPresented: $isCreditViewPresented) {
             CreditsView()
         }
