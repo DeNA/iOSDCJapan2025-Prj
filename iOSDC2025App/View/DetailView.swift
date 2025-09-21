@@ -60,7 +60,7 @@ struct DetailView: View {
                             .foregroundStyle(Color.gray)
                     }
                     
-                    Text(session.startTime.time)
+                    Text(session.startTime, format: .dateTime)
                         .font(.body)
                         .foregroundStyle(Color.gray)
                     

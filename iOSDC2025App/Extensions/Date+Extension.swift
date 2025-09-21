@@ -19,11 +19,6 @@ extension Date {
         return formatter.string(from: self)
     }
     
-    var time: String {
-        let formatter = formatter(format: "HH:mm:ss")
-        return formatter.string(from: self)
-    }
-    
     func formatter(format: String) -> DateFormatter {
         let calendar = Calendar(identifier: .gregorian)
         let formatter = DateFormatter()

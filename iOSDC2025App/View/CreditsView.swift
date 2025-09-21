@@ -41,7 +41,21 @@ struct CreditsView: View {
         "iPodnana",
         "上ちょ",
         "417",
-        "Megabits",
+        Contributor(
+            text: Text("Megabits")
+                .font(.system(size: 100))
+                .fontWeight(.black)
+                .foregroundStyle(LinearGradient(colors: [.red], startPoint: .leading, endPoint: .top))
+                
+        ),
+        "",
+        Contributor(
+            text: Text("ynoseda")
+                .font(.system(size: 130))
+                .fontWeight(.black)
+                .foregroundStyle(LinearGradient(colors: [.green, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+                
+        ),
         "nnsnodnb",
         "よーしん",
         "aohara",
@@ -62,8 +76,14 @@ struct CreditsView: View {
         "スタッフ",
         "tatsubee",
         "こうちゃん",
-        "ynoseda",
-        "treastrain",
+        
+        Contributor(
+            text: Text("tr\n   eas\n     train")
+                .font(.system(size: 92))
+                .fontWeight(.black)
+                .foregroundStyle(LinearGradient(colors: [.orange, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing))
+                
+        ),
         "ojun",
         "よあん",
         "じょにー",
@@ -78,7 +98,7 @@ struct CreditsView: View {
             text: Text("まつじ")
                 .font(.system(size: 92))
                 .fontWeight(.black)
-                .foregroundStyle(LinearGradient(colors: [.red, .yellow], startPoint: .leading, endPoint: .top))
+                .foregroundStyle(LinearGradient(colors: [.mint, .cyan], startPoint: .leading, endPoint: .top))
                 
         )
         // add your name
