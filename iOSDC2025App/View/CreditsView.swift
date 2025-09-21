@@ -50,7 +50,12 @@ struct CreditsView: View {
         "よあん",
         "じょにー",
         "AJ",
-        "へじふく"
+        "へじふく",
+        "kagaffy",
+        "いますえ",
+        "AJ",
+        "tera-ny",
+        "まつじ",
         // add your name
     ]
 
