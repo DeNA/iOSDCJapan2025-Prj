@@ -111,8 +111,9 @@ struct CreditsView: View {
                 }
                 ToolbarItem(placement: .principal) {
                     Text("CONTRIBUTORS")
+                        .bold()
                         .foregroundStyle(.white)
-                        .font(.title2)
+                        .font(.title)
                         .frame(maxWidth: .infinity, alignment: .center)
                 }
             }
