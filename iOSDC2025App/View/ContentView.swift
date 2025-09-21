@@ -5,20 +5,13 @@ struct ContentView: View {
     @State private var trackKind: TrackKind = .trackA
     @State private var isCreditViewPresented = false
     
-    enum TrackKind: String, CaseIterable, Identifiable {
-        case trackA = "Track A"
-        case trackB = "Track B"
-        case trackC = "Track C"
-        case trackD = "Track D"
+    enum TrackKind: Int, Identifiable {
+        case trackA
+        case trackB
+        case trackC
+        case trackD
         
-        var id: Int {
-            switch self {
-            case .trackA: 0
-            case .trackB: 1
-            case .trackC: 2
-            case .trackD: 3
-            }
-        }
+        var id: Int { self.rawValue }
     }
     
     var body: some View {
@@ -27,9 +20,9 @@ struct ContentView: View {
                 Tab(day.title, systemImage: "\(day.id - 1).circle") {
                     NavigationStack {
                         Picker("", selection: $trackKind) {
-                            ForEach(TrackKind.allCases) { kind in
-                                Text(kind.rawValue)
-                                    .tag(kind)
+                            ForEach(timetable.tracks) { track in
+                                Text(track.name)
+                                    .tag(TrackKind(rawValue: track.id)!)
                             }
                         }
                         .pickerStyle(.segmented)
