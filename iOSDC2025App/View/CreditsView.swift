@@ -73,6 +73,7 @@ struct CreditsView: View {
         "いますえ",
         "AJ",
         "tera-ny",
+        "entaku",
         Contributor(
             text: Text("まつじ")
                 .font(.system(size: 92))
