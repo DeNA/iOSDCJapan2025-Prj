@@ -6,6 +6,24 @@
 //
 
 import SwiftUI
+import Foundation
+
+struct Contributor: ExpressibleByStringLiteral, Identifiable {
+    let id = UUID()
+    var text: Text
+
+    init(text: Text) {
+        self.text = text
+    }
+    
+    init(stringLiteral value: String) {
+        self.text = Text(value)
+            .font(.system(size: 26))
+            .bold()
+            .foregroundStyle(.white)
+            
+    }
+}
 
 // ストリートコーディングに参加した皆さんの名前をクレジットとして残すビュー
 struct CreditsView: View {
@@ -15,7 +33,7 @@ struct CreditsView: View {
     private let scrollDuration: TimeInterval = 7 * 10
 
     // クレジット名
-    private static let names: [String] = [
+    private static let names: [Contributor] = [
         "armtic",
         "のっちー",
         "Rei",
@@ -55,7 +73,13 @@ struct CreditsView: View {
         "いますえ",
         "AJ",
         "tera-ny",
-        "まつじ",
+        Contributor(
+            text: Text("まつじ")
+                .font(.system(size: 92))
+                .fontWeight(.black)
+                .foregroundStyle(LinearGradient(colors: [.red, .yellow], startPoint: .leading, endPoint: .top))
+                
+        )
         // add your name
     ]
 
@@ -72,11 +96,8 @@ struct CreditsView: View {
                         Spacer().frame(height: viewHeight * 0.7)
                         
                         VStack(alignment: .center, spacing: 8) {
-                            ForEach((0...9).flatMap { _ in Self.names }, id: \.self) { name in
-                                Text(name)
-                                    .font(.system(size: 26))
-                                    .bold()
-                                    .foregroundStyle(.white)
+                            ForEach((0...9).flatMap { _ in Self.names }) { contributor in
+                                contributor.text
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.vertical, 4)
                                     .padding(.leading, 32)
