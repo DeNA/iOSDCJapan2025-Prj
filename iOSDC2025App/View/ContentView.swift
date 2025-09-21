@@ -138,7 +138,7 @@ struct ContentCell: View {
                         .bold()
                         .padding(.horizontal, 8)
                         .padding(.vertical, 3).foregroundStyle(.white)
-                        .background(.blue)
+                        .background(Color.mint)
                         .clipShape(Capsule())
                 }
                 Text(timetable.tracks[session.trackId].name)
