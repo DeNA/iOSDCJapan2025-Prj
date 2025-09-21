@@ -76,10 +76,6 @@ struct CreditsView: View {
                         }
                         .padding(.bottom, 32)
                         
-                        Text("DeNA Engineers")
-                            .font(.title)
-                            .foregroundStyle(.white)
-                        
                         Spacer().frame(height: viewHeight)
                         
                         Color.clear
