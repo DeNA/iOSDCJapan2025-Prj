@@ -12,6 +12,27 @@ struct CreditsView: View {
     @Environment(\.dismiss) var dismiss
     private let names: [String] = [
         "armtic",
+        "のっちー",
+        "Rei",
+        "kuroruri",
+        "iPodnana",
+        "上ちょ",
+        "417",
+        "Megabits",
+        "nnsnodnb",
+        "よーしん",
+        "aohara",
+        "Etsushi",
+        "daiki_U",
+        "だっちゃん",
+        "Tanaka",
+        "atsuyan",
+        "_tak_hito_",
+        "mimimi1204",
+        "S_Shimotori",
+        "ni_san2000",
+        "yamakentoc",
+        "DeNA Engineers"
         // add your name
     ]
     
@@ -34,8 +55,7 @@ struct CreditsView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
-                Color.pink
-                    .ignoresSafeArea()
+                Color.blue
             }
             .toolbar {
                 dismissButton()
