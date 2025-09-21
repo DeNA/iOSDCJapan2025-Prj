@@ -68,26 +68,8 @@ struct DetailView: View {
                 
                 Divider()
                 
-                Button {
-                    Task {
-                        isGenerating = true
-                        generationError = nil
-                        do {
-                            // Use Foundation Models to imagine a session summary from the title
-                            let instructions =  "次のセッションタイトルから、参加者が内容を把握できる日本語の短い概要(2-3文)を作成してください"
-                            let session = LanguageModelSession(instructions: instructions)
-                            _ = SystemLanguageModel.default
-                            let output = try await session.respond(to: self.session.title)
-                            // Keep it concise
-                            summary = output.content
-                        } catch {
-                            generationError = error.localizedDescription
-                        }
-                        isGenerating = false
-                    }
-                } label: {
-                    Text("トークの内容を想像する")
-                }
+                // TODO: ローディング中は非表示にしたいですよね？〇〇さん、あとは頼みます...
+                GenerateSummaryButton(action: generateSummary)
                 
                 if isGenerating {
                     ProgressView("想像中💭")
@@ -116,6 +98,41 @@ struct DetailView: View {
         }
     }
 }
+
+private extension DetailView {
+    func generateSummary() {
+        Task {
+            isGenerating = true
+            generationError = nil
+            do {
+                // Use Foundation Models to imagine a session summary from the title
+                let instructions =  "次のセッションタイトルから、参加者が内容を把握できる日本語の短い概要(2-3文)を作成してください"
+                let session = LanguageModelSession(instructions: instructions)
+                _ = SystemLanguageModel.default
+                let output = try await session.respond(to: self.session.title)
+                // Keep it concise
+                summary = output.content
+            } catch {
+                generationError = error.localizedDescription
+            }
+            isGenerating = false
+        }
+    }
+}
+
+
+private struct GenerateSummaryButton: View {
+    var action: () -> Void
+    
+    var body: some View {
+        Button {
+            action()
+        } label: {
+            Text("トークの内容を想像する")
+        }
+    }
+}
+
 /**
  var id: Int
  var time: Date
