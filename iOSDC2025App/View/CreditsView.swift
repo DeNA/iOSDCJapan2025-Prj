@@ -47,7 +47,7 @@ struct CreditsView: View {
         "ynoseda",
         "treastrain",
         "ojun",
-        "よあん"
+        "よあん",
         "じょにー"
         // add your name
     ]
