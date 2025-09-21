@@ -140,6 +140,15 @@ struct ContentCell: View {
                 Text(session.startTime, format: .dateTime)
                     .monospacedDigit()
                     .frame(maxWidth: .infinity, alignment: .leading)
+                if session.isSponsor {
+                    Text("スポンサー")
+                        .font(.caption)
+                        .bold()
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3).foregroundStyle(.white)
+                        .background(.blue)
+                        .clipShape(Capsule())
+                }
                 Text(timetable.tracks[session.trackId].name)
                     .font(.caption)
                     .bold()
