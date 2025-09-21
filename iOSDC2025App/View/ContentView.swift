@@ -49,7 +49,11 @@ struct ContentView: View {
     // TODO: atsuyan Viewでフィルターしてるの微妙なのでモデルに移したい...
     private func filter(sessions: [iOSDCSession], text: String, trackId: Int?) -> [iOSDCSession] {
         guard !text.isEmpty else {
-            return sessions.filter({$0.trackId == trackId})
+            if let trackId = trackId {
+                return sessions.filter({$0.trackId == trackId})
+            } else {
+                return sessions
+            }
         }
         return sessions.filter({ $0.title.contains(text) })
     }
@@ -73,7 +77,7 @@ struct ContentView: View {
                 Button {
                     isCreditViewPresented = true
                 } label: {
-                    Image(systemName: "signature")
+                    Label("Contributors", systemImage: "signature")
                 }
             }
         }
