@@ -36,7 +36,6 @@ struct ContentView: View {
                         .padding(.horizontal)
                         daylist(day: day, trackId: trackKind.id)
                     }
-                    .searchable(text: $searchText, placement: .navigationBarDrawer)
                 }
             }
             Tab(role: .search) {
