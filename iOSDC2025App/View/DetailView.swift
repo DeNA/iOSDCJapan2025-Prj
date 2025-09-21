@@ -36,16 +36,16 @@ struct DetailView: View {
                     }
                 
                 VStack(spacing: 16) {
-                        Text(session.speaker?.name ?? "---")
-                            .font(.title2)
-                            .foregroundStyle(Color.black)
-                            .onTapGesture {
-                                counter += 1
-                                
-                                if counter.isMultiple(of: 10) {
-                                    flag.toggle()
-                                }
+                    Text(session.speaker?.name ?? "---")
+                        .font(.title2)
+                        .foregroundStyle(Color.black)
+                        .onTapGesture {
+                            counter += 1
+                            
+                            if counter.isMultiple(of: 10) {
+                                flag.toggle()
                             }
+                        }
                     Text(session.title)
                         .font(.title)
                         .fontWeight(.bold)
@@ -67,9 +67,13 @@ struct DetailView: View {
                 }
                 
                 Divider()
-                
-                // TODO: ローディング中は非表示にしたいですよね？〇〇さん、あとは頼みます...
-                GenerateSummaryButton(action: generateSummary)
+            }
+            
+            VStack(spacing: 10) {
+                // TODO: generatingボタンと概要テキスト間のスペースが気になる
+                if !isGenerating, generationError == nil {
+                    GenerateSummaryButton(action: generateSummary)
+                }
                 
                 if isGenerating {
                     ProgressView("想像中💭")
@@ -81,7 +85,10 @@ struct DetailView: View {
                         .foregroundStyle(.red)
                 }
 
-                if let summary {
+                if
+                    let summary,
+                    !isGenerating
+                {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("概要")
                             .font(.headline)

@@ -48,7 +48,9 @@ struct CreditsView: View {
         "treastrain",
         "ojun",
         "よあん",
-        "じょにー"
+        "じょにー",
+        "AJ",
+        "へじふく"
         // add your name
     ]
 
