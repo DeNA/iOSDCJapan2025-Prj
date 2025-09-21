@@ -33,6 +33,7 @@ struct ContentView: View {
                             }
                         }
                         .pickerStyle(.segmented)
+                        .padding(.horizontal)
                         daylist(day: day, trackId: trackKind.id)
                     }
                     .searchable(text: $searchText, placement: .navigationBarDrawer)

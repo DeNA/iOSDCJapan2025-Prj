@@ -32,6 +32,7 @@ struct CreditsView: View {
         "S_Shimotori",
         "ni_san2000",
         "yamakentoc",
+        "tera-ny",
         "DeNA Engineers"
         // add your name
     ]
@@ -41,17 +42,13 @@ struct CreditsView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack {
-                    Text("🎉CONTRIBUTORS🎉")
-                        .font(Font.largeTitle.bold())
-                    
-                    // TODO: 可愛く派手にしてくださいーーー！！！！
-                    if let formatted = formatter.string(from: names) {
-                        Text(formatted)
-                            .font(.subheadline.bold())
-                    }
+                if let formatted = formatter.string(from: names) {
+                    Text(formatted)
+                        .font(.subheadline.bold())
+                        .lineHeight(.loose)
+                        .foregroundStyle(.white)
+                        .padding()
                 }
-                .foregroundStyle(.white)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
@@ -60,6 +57,7 @@ struct CreditsView: View {
             .toolbar {
                 dismissButton()
             }
+            .navigationTitle(Text("🎉CONTRIBUTORS🎉"))
         }
     }
     
